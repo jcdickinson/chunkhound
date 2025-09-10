@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.2.0] - 2025-08-24
+
+### Enhanced
+- Semantic search upgraded from two-hop to dynamic multi-hop expansion with intelligent stopping criteria, delivering more comprehensive and contextually relevant results while avoiding search explosion
+
 ## [3.1.0] - 2025-08-21
 
 ### Added
@@ -42,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Enhanced
 - Parsing system completely rebuilt with cAST (Code AST) algorithm for universal language support
-- Configuration system dramatically simplified with fewer user-facing options for easier setup  
+- Configuration system dramatically simplified with fewer user-facing options for easier setup
 - OpenAI provider unified to handle both standard and custom OpenAI-compatible endpoints
 - MCP server reliability improved with proper initialization sequencing and watchdog coordination
 - Test infrastructure enhanced with Ollama compatibility and extended timeouts
@@ -67,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Enhanced
 - Architecture documentation significantly improved for better LLM comprehension and AI-assisted development workflows
 
-### Fixed  
+### Fixed
 - Type annotation syntax errors that could cause import failures in Python 3.10+ environments
 - Enhanced smoke tests now detect forward reference type annotation issues early
 
@@ -76,14 +81,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - MCP HTTP transport support alongside stdio transport for flexible deployment options
 
-### Enhanced  
+### Enhanced
 - Configuration system unified across CLI and MCP components for consistent behavior
 - File change processing reliability improved in MCP servers with better debouncing and coordination
 - Database portability enhanced with relative path storage
 
 ### Fixed
 - MCP server initialization deadlocks and startup crashes resolved with proper async coordination
-- File deletion handling improved using IndexingCoordinator for better reliability  
+- File deletion handling improved using IndexingCoordinator for better reliability
 - MCP server tool discovery enhanced with fallback logic for better error recovery
 - File path resolution improved in DuckDB provider for cross-platform consistency
 
@@ -423,7 +428,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 For more information, visit: https://github.com/chunkhound/chunkhound
 
-[Unreleased]: https://github.com/chunkhound/chunkhound/compare/v3.1.0...HEAD
+[Unreleased]: https://github.com/chunkhound/chunkhound/compare/v3.2.0...HEAD
+[3.2.0]: https://github.com/chunkhound/chunkhound/compare/v3.1.0...v3.2.0
 [3.1.0]: https://github.com/chunkhound/chunkhound/compare/v3.0.1...v3.1.0
 [3.0.1]: https://github.com/chunkhound/chunkhound/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/chunkhound/chunkhound/compare/v2.8.1...v3.0.0
